@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.21](https://github.com/snomiao/say/compare/@snomiao/say@0.1.20...@snomiao/say@0.1.21) (2022-04-13)
+
+**Note:** Version bump only for package @snomiao/say
+
+
+
+
+
 ## [0.1.20](https://github.com/snomiao/say/compare/@snomiao/say@0.1.12...@snomiao/say@0.1.20) (2022-04-13)
 
 
