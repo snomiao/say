@@ -1,4 +1,5 @@
 {
+  "name": "@snomiao/say-test",
   "private": true,
   "scripts": {
     "test": "node test.mjs"
