@@ -1,17 +1,22 @@
 {
   "name": "@snomiao/say",
   "version": "0.1.6",
+  "description": "A cli wrapper for say",
   "keywords": [
     "cli",
     "say"
   ],
-  "author": "snomiao<snomiao@gmail.com>",
+  "license": "ISC",
+  "author": "snomiao <snomiao@gmail.com>",
   "type": "module",
   "main": "./lib/say.js",
   "module": "./lib/say.js",
+  "types": "./lib/say.d.ts",
   "bin": {
-    "@snomiao/say": "bin/say",
     "say": "bin/say"
+  },
+  "directories": {
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -24,5 +29,8 @@
     "esm": "^3.2.25",
     "say": "^0.16.0"
   },
-  "gitHead": "ef4609ab7601f1b4030135c19f6e971d9aa47ace"
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }
