@@ -30,8 +30,8 @@ jobs:
           git config --global user.name "lerna-ci@$GITHUB_ACTOR"
       - run: pnpm install
       - run: npm run build
-      - name: Check if able to publish changes
-        run: npm whoami # will throw and exit if npm is not ready to publish
+      # - name: Check if able to publish changes
+      #   run: npm whoami # will throw and exit if npm is not ready to publish
       - name: Publish
         run: lerna publish --yes --no-verify-access # the flag is needed if NPM_TOKEN is an Automation Token
         env:
