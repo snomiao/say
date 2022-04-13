@@ -1,11 +1,11 @@
-name: publish-say
+name: publish-all
 on:
   - push
   # push:
   #   tags:
   #     - "@snomiao/say*"
 jobs:
-  publish-say:
+  publish-all:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -19,13 +19,15 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # set this token manually
           
       - name: Configure Git User
         run: |
           git config --global user.email "lerna-ci@jitsu.com"
           git config --global user.name "lerna-ci@$GITHUB_ACTOR"
 
-      - run: cd packages/@snomiao/say
+      # - run: cd packages/@snomiao/say
       - run: npm install
       - run: npm run build
       
