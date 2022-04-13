@@ -1,6 +1,6 @@
 {
   "name": "@snomiao/say",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "A cli wrapper for say",
   "keywords": [
     "cli",
