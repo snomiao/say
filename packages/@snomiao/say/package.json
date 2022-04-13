@@ -1,6 +1,6 @@
 {
   "name": "@snomiao/say",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "A cli wrapper for say",
   "keywords": [
     "cli",
@@ -30,12 +30,12 @@
     "esm": "^3.2.25",
     "say": "^0.16.0"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "daab9679b14cfc3113c4b632f9ae9ca404362e79",
   "devDependencies": {
     "@types/node": "^17.0.23",
     "typescript": "^4.6.3"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "daab9679b14cfc3113c4b632f9ae9ca404362e79"
 }
