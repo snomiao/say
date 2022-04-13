@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.20](https://github.com/snomiao/say/compare/@snomiao/say@0.1.12...@snomiao/say@0.1.20) (2022-04-13)
+
+
+### Bug Fixes
+
+* bin ([9959015](https://github.com/snomiao/say/commit/99590157ff3a7a287f275a48cf932fa0710d28a2))
+* text is ([77825ab](https://github.com/snomiao/say/commit/77825abacc13271b72629d8319bca13f1f2ce474))
+
+
+
+
+
 ## [0.1.12](https://github.com/snomiao/say/compare/@snomiao/say@0.1.11...@snomiao/say@0.1.12) (2022-04-13)
 
 **Note:** Version bump only for package @snomiao/say
