@@ -24,7 +24,7 @@
   "scripts": {
     "build": "lerna run build",
     "format": "prettier -w . && eslint --fix",
-    "publish": "lerna publish",
+    "lerna-publish": "lerna publish",
     "test": "lerna run test"
   },
   "dependencies": {},
