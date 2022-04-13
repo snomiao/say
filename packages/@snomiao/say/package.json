@@ -6,7 +6,7 @@
     "cli",
     "say"
   ],
-  "license": "ISC",
+  "license": "GPLv3",
   "author": "snomiao <snomiao@gmail.com>",
   "main": "./lib/say.js",
   "types": "./lib/say.d.ts",

@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/snomiao/say.git"
   },
-  "license": "ISC",
+  "license": "GPLv3",
   "author": "",
   "main": "index.js",
   "directories": {
