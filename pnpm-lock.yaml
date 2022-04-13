@@ -18,13 +18,18 @@ importers:
 
   packages/@snomiao/say:
     specifiers:
+      '@types/node': ^17.0.23
       arg: ^5.0.1
       esm: ^3.2.25
       say: ^0.16.0
+      typescript: ^4.6.3
     dependencies:
       arg: 5.0.1
       esm: 3.2.25
       say: 0.16.0
+    devDependencies:
+      '@types/node': 17.0.23
+      typescript: 4.6.3
 
   packages/@snomiao/say-test:
     specifiers:

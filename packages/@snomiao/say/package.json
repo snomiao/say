@@ -33,5 +33,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "daab9679b14cfc3113c4b632f9ae9ca404362e79"
+  "gitHead": "daab9679b14cfc3113c4b632f9ae9ca404362e79",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "typescript": "^4.6.3"
+  }
 }
