@@ -26,6 +26,7 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
   };
 }
 
+
 export default cli;
 export async function cli(args: string[]) {
   const { message, voice, speed, output, list } =
