@@ -1,0 +1,41 @@
+{
+  "name": "say",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/snomiao/say#readme",
+  "bugs": {
+    "url": "https://github.com/snomiao/say/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snomiao/say.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "format": "prettier -w .",
+    "test": "lerna run test"
+  },
+  "dependencies": {
+    "arg": "^5.0.1",
+    "esm": "^3.2.25",
+    "say": "^0.16.0"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-packagejson": "^2.2.17",
+    "typescript": "^4.6.3"
+  }
+}

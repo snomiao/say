@@ -1,0 +1,27 @@
+{
+  "name": "@snomiao/say",
+  "version": "0.1.0",
+  "keywords": [
+    "cli",
+    "say"
+  ],
+  "author": "snomiao<snomiao@gmail.com>",
+  "type": "module",
+  "main": "./lib/say.js",
+  "module": "./lib/say.js",
+  "bin": {
+    "@snomiao/say": "bin/say",
+    "say": "bin/say"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "arg": "^5.0.1",
+    "esm": "^3.2.25",
+    "say": "^0.16.0"
+  }
+}
