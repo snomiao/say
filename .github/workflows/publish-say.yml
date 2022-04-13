@@ -13,6 +13,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: cd packages/@snomiao/say
+      - run: npm install
       - run: npm run build
       - run: npm run test
       - run: npm run publish
