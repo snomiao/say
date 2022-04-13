@@ -26,8 +26,8 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # set this token manually
       - name: Configure Git User
         run: |
-          git config --global user.email "lerna-ci@jitsu.com"
-          git config --global user.name "lerna-ci@$GITHUB_ACTOR"
+          git config --global user.email "snomiao@gmail.com"
+          git config --global user.name "snomiao-ci@$GITHUB_ACTOR"
       - run: pnpm install
       - run: npm run build
       # - name: Check if able to publish changes
