@@ -13,12 +13,10 @@ jobs:
         with:
           fetch-depth: "0" # pulls all history and tags for Lerna to detect what packages changed.
           token: ${{ secrets.GITHUB_TOKEN }} # this token is available by default
-
       # [Continuous Integration | pnpm]( https://pnpm.io/continuous-integration )
       - uses: pnpm/action-setup@v2.0.1
         with:
           version: 7.0.0-rc.3
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
@@ -26,12 +24,10 @@ jobs:
           cache: "pnpm"
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # set this token manually
-
       - name: Configure Git User
         run: |
           git config --global user.email "lerna-ci@jitsu.com"
           git config --global user.name "lerna-ci@$GITHUB_ACTOR"
-
       - run: pnpm install
       - run: npm run build
       - name: Check if able to publish changes
@@ -40,8 +36,6 @@ jobs:
         run: lerna publish --yes --no-verify-access # the flag is needed if NPM_TOKEN is an Automation Token
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # set this token manually
-
-
       # - run: npm run test # test only works in windows
       # - run: npm run publish
       #   env:
