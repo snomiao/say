@@ -2,6 +2,7 @@ import arg from "arg";
 import { resolve } from "path";
 import { exportFile, getInstalledVoices, speak } from "./say";
 
+
 function parseArgumentsIntoOptions(rawArgs: string[]) {
   const opts = {
     "--voice": String,
