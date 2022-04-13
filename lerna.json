@@ -7,6 +7,11 @@
       "conventionalCommits": true,
       "yes": true
     },
+    "publish": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "yes": true
+    },
     "run": { "stream": true },
     "exec": { "stream": true }
   }

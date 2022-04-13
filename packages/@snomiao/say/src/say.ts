@@ -3,10 +3,11 @@ import { default as say } from "say";
 /**
  * use (say as any) because index.d.ts of say.js seems to be wrong
  */
+
 const callbacker =
   <T>(resolve: { (result: T): void }, reject: { (err: string): void }) =>
-  (err: string, result: T) =>
-    err ? reject(err) : resolve(result);
+    (err: string, result: T) =>
+      err ? reject(err) : resolve(result);
 
 export const speak = (
   text: string,

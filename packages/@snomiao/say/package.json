@@ -16,10 +16,10 @@
     "say": "bin/say"
   },
   "directories": {
-    "lib": "lib"
+    "lib": "./lib"
   },
   "files": [
-    "lib"
+    "./lib"
   ],
   "scripts": {
     "build": "tsc"
