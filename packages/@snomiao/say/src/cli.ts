@@ -18,7 +18,7 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
     argv: rawArgs.slice(2),
   });
   return {
-    text: args._[0],
+    text: args._.join(' '),
     speed: args["--speed"] || undefined,
     voice: args["--voice"] || undefined,
     list: args["--list"] || undefined,
