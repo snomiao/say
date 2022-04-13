@@ -19,7 +19,8 @@
     "lib": "./lib"
   },
   "files": [
-    "./lib"
+    "lib/**",
+    "bin/**"
   ],
   "scripts": {
     "build": "tsc"
@@ -32,5 +33,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "3c1923ab0a80d1b5414715e4c96c1565bbb302ca"
+  "gitHead": "daab9679b14cfc3113c4b632f9ae9ca404362e79"
 }

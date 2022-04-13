@@ -1,5 +1,5 @@
 {
-  "name": "say",
+  "name": "root",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -23,15 +23,11 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "format": "prettier -w .",
-    "test": "lerna run test",
-    "publish": "lerna exec -- npm publish"
+    "format": "prettier -w . && eslint --fix",
+    "publish": "lerna publish",
+    "test": "lerna run test"
   },
-  "dependencies": {
-    "arg": "^5.0.1",
-    "esm": "^3.2.25",
-    "say": "^0.16.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "lerna": "^4.0.0",
     "prettier": "^2.6.2",
