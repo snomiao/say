@@ -4,7 +4,8 @@
   "command": {
     "version": {
       "allowBranch": "main",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "yes": true
     },
     "run": { "stream": true },
     "exec": { "stream": true }
