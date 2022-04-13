@@ -18,7 +18,7 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
     argv: rawArgs.slice(2),
   });
   return {
-    message: args._[0],
+    text: args._[0],
     speed: args["--speed"] || undefined,
     voice: args["--voice"] || undefined,
     list: args["--list"] || undefined,
@@ -29,18 +29,22 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
 
 export default cli;
 export async function cli(args: string[]) {
-  const { message, voice, speed, output, list } =
+  const { text, voice, speed, output, list } =
     parseArgumentsIntoOptions(args);
   if (list) {
     const voicelist = await getInstalledVoices();
     console.log(voicelist.join("\n"));
     return;
   }
+  if (!text) {
+    console.error('ERROR: text is required')
+    return
+  }
   if (output) {
     const path = resolve(output);
-    await exportFile(message, voice, speed, path);
+    await exportFile(text, voice, speed, path);
     console.log(path);
     return;
   }
-  await speak(message, voice, speed);
+  await speak(text, voice, speed);
 }
