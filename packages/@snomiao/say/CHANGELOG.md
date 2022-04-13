@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.23](https://github.com/snomiao/say/compare/@snomiao/say@0.1.22...@snomiao/say@0.1.23) (2022-04-13)
+
+
+### Bug Fixes
+
+* multi words text ([6e39a4e](https://github.com/snomiao/say/commit/6e39a4e60573b8af45a2ce862e393a3e91ad3514))
+
+
+
+
+
 ## [0.1.22](https://github.com/snomiao/say/compare/@snomiao/say@0.1.20...@snomiao/say@0.1.22) (2022-04-13)
 
 **Note:** Version bump only for package @snomiao/say
