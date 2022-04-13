@@ -1,10 +1,10 @@
-name: npm-publish
+name: publish-say
 on:
   push:
     tags:
-      - "v*"
+      - "@snomiao/say*"
 jobs:
-  npm-publish:
+  publish-say:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
