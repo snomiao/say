@@ -22,8 +22,6 @@ jobs:
         with:
           node-version: 16
           cache: "pnpm"
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # set this token manually
       - name: Configure Git User
         run: |
           git config --global user.email "lerna-ci@jitsu.com"
